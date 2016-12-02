@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ProgressBar
+        android:id="@+id/pb_test_break_point"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_margin="15dp" />
+
+    <Button
+        android:id="@+id/bt_break_point_start"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="开始" />
+
+    <Button
+        android:id="@+id/bt_break_point_pause"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="暂停" />
+
+    <Button
+        android:id="@+id/bt_break_point_continue"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="继续" />
+
+</LinearLayout>
