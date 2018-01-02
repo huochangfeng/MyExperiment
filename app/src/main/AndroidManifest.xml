@@ -6,6 +6,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET"/>
     <application
+        android:name=".application.BaseApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -23,6 +24,8 @@
         <activity android:name=".epub.BatteryActivity" />
         <activity android:name=".breakpoint.TestActivity" />
         <activity android:name=".qrcode.BarCodeTestActivity" />
+        <activity android:name=".netframe.NetFrameActivity" />
+        <activity android:name=".rxjava.RxJavaTest" />
     </application>
 
 </manifest>

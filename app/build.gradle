@@ -3,7 +3,11 @@ apply plugin: 'org.greenrobot.greendao'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "26.0.2"
+    buildToolsVersion '26.0.2'
+
+    configurations.all {
+        resolutionStrategy.force 'com.android.support:support-annotations:23.1.0'
+    }
 
     defaultConfig {
         applicationId "com.huochangfeng.myexperiment"
@@ -27,13 +31,21 @@ greendao {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:25.+'
-    compile 'com.android.support:design:25.+'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:design:25.3.1'
     compile files('libs/epublib-core-latest.jar')
     compile files('libs/slf4j-android-1.6.1-RC1.jar')
     compile 'org.jsoup:jsoup:1.9.2'
     compile 'com.zhy:okhttputils:2.6.2'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'org.greenrobot:greendao:3.0.1'
+    compile 'com.lzy.net:okgo:3.0.4'
+    compile 'com.google.code.gson:gson:2.8.2'
+    compile 'com.orhanobut:logger:2.1.1'
     compile files('libs/zxing.jar')
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile 'com.github.bumptech.glide:glide:4.2.0'
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    compile 'io.reactivex.rxjava2:rxjava:2.1.5'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.2.0'
 }
