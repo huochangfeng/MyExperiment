@@ -26,6 +26,7 @@
         <activity android:name=".qrcode.BarCodeTestActivity" />
         <activity android:name=".netframe.NetFrameActivity" />
         <activity android:name=".rxjava.RxJavaTest" />
+        <activity android:name=".shadow.ShadowActivity" />
     </application>
 
 </manifest>

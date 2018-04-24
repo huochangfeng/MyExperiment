@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import com.huochangfeng.myexperiment.netframe.NetFrameActivity;
 import com.huochangfeng.myexperiment.qrcode.BarCodeTestActivity;
 import com.huochangfeng.myexperiment.rxjava.RxJavaTest;
+import com.huochangfeng.myexperiment.shadow.ShadowActivity;
 
 /**
  * @author 霍昌峰
@@ -21,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
         Intent intent = new Intent();
 
-        switch (2) {
+        switch (4) {
             case 1:
                 intent.setClass(this, BarCodeTestActivity.class);
                 break;
@@ -30,6 +31,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case 3:
                 intent.setClass(this, RxJavaTest.class);
+                break;
+            case 4:
+                intent.setClass(this, ShadowActivity.class);
                 break;
             default:
                 break;

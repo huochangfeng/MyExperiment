@@ -39,7 +39,7 @@ public class ReadView extends View {
 			position[0] = sp.getInt("begin",0);
 			position[1] = sp.getInt("end",0);
 			Log.e("start" + position[0], "end" + position[1]);
-			pagefactory.setBgBitmap(BitmapFactory.decodeResource(context.getResources(), R.drawable.bg));
+			pagefactory.setBgBitmap(BitmapFactory.decodeResource(context.getResources(), R.drawable.bg_9));
 			pagefactory.openBook(path, position);
 			pagefactory.onDraw(mCurrentPageCanvas);
 		} catch (Exception e) {
